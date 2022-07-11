@@ -31,8 +31,99 @@ ul {
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(112, 157, 255, 0.8),
-    hsla(242, 74%, 61%, 0.8)
+    rgba(19, 19, 19, 0.8),
+    hsla(0, 0%, 11%, 0.8)
   ) !important;
   transition-duration: 300ms;
+}
+
+/* global colors */
+
+.root {
+  --poppins: 'Poppins', sans-serif;
+  --smokey-black: #0c0e07;
+  --smokey-black-fade: #0b0d07bd;
+  --corn-silk: #fefae0;
+  --accent: #33a1fd;
+  --off-white: #f1f5f8;
+  --ghost-white: #f1f5f8;
+}
+
+.waving-hand {
+  height: 2rem;
+  margin-right: 0.5rem;
+  z-index: -1;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.header-nav {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.my-photo {
+  height: 30rem;
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.react-icon {
+  font-size: 1.5rem;
+  color: #61dbfb;
+}
+
+.rotate {
+  animation: spin 9s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

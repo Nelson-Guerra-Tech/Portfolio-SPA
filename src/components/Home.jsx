@@ -1,25 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import WavingHand from '../assets/waving-hand.png';
 
 export default function Home() {
+  const [hand, setHand] = useState(false);
+  const handleClick = () => {
+    setHand(!hand);
+  };
+
   return (
-    <div name='home' className='bg-[#0a192f] h-screen w-full'>
+    <div name='home' className='bg-[#f1f5f8] h-screen w-full'>
       {/* container */}
       <div className='max-w-[1000px] px-8 mx-auto flex flex-col justify-center h-full'>
-        <p className='text-pink-600'>Hello, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+        <p className='text-[#33a1fd]'>
+          <img
+            className='waving-hand wave'
+            src={WavingHand}
+            alt='waving-hand'
+          />
+          Hello, my name is
+        </p>
+        <h1 className='text-4xl sm:text-7xl font-bold text-[#0c0e07]'>
           Nelson Guerra
         </h1>
-        <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
-          I'm a Software Developer
+        <h2 className='text-4xl sm:text-7xl font-bold text-gray-600'>
+          I'm a <span className='text-[#33a1fd]'>Software Developer</span>
         </h2>
-        <p className='text-[#8892b0] py-4 max-w-[700px]'>
-          Specializing in building front-end digital experiences. Currently, I'm
-          focused on building responsive real-world applications with React
+        <p className='text-gray-600 py-4 max-w-[700px]'>
+          Specializing in building front-end digital experiences. Based out of
+          Georgia 🌎 Currently, I'm focused on building responsive, real-world
+          applications with React.
         </p>
         <div>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 rounded-xl duration-300'>
-            Portfolio
+          <button className='text-white bg-[#33a1fd] border-none group border-2 px-6 py-3 my-2 flex items-center hover:bg-transparent hover:text-[#0c0e07] rounded-xl duration-300 btn'>
+            <Link to='portfolio' smooth={true} duration={500}>
+              Portfolio
+            </Link>
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3' />
             </span>

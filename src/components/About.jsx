@@ -1,12 +1,13 @@
 import React from 'react';
+import myPhoto from '../assets/IMG_4443.JPG';
 
 export default function About() {
   return (
-    <div className='w-full h-screen bg-[#0a192f] text-gray-300' name='about'>
+    <div className='w-full h-screen bg-[#f1f5f8] text-gray-600' name='about'>
       <div className='flex flex-col justify-center items-center w-full'>
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+            <p className='text-4xl text-gray-800 font-bold inline border-b-4 border-[#33a1fd]'>
               🧔🏻‍♂️ About
             </p>
           </div>
@@ -15,8 +16,9 @@ export default function About() {
         </div>
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right text-4xl font-bold'>
-            <p>Hi, I'm Nelson! Please take a look around.</p>
+          <div className='sm:text-right text-4xl font-bold sm:justify-end flex justify-center'>
+            {/* <p>Hi, I'm Nelson! Please take a look around.</p> */}
+            <img className='my-photo' src={myPhoto} alt='my-photo' />
           </div>
           <div>
             <p>

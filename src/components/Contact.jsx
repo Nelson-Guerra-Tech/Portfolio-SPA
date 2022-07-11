@@ -4,14 +4,18 @@ export default function Contact() {
   return (
     <div
       name='contact'
-      className='bg-[#0a192f] w-full h-screen flex justify-center items-center p-4'
+      className='bg-[#f1f5f8] w-full h-screen flex justify-center items-center p-4'
     >
-      <form action='' className='flex flex-col max-w-[680px] w-full'>
+      <form
+        action='https://getform.io/f/70f926b2-9884-46bc-a1a9-f1e7b4916c64'
+        method='POST'
+        className='flex flex-col max-w-[680px] w-full'
+      >
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>
+          <p className='text-4xl font-bold inline border-b-4 border-[#33a1fd] text-gray-900'>
             Contact
           </p>
-          <p className='text-gray-300 py-4'>
+          <p className='text-gray-700 py-4'>
             Submit the form below or shoot me an email -
             nelsonguerra.tech@gmail.com
           </p>
@@ -34,7 +38,7 @@ export default function Contact() {
           className='bg-[#ccd6f6] rounded-lg'
           placeholder='Message'
         ></textarea>
-        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-xl'>
+        <button className='text-white bg-[#33a1fd] border-none px-6 py-3 my-2  hover:bg-transparent hover:text-[#0c0e07] rounded-xl duration-300 btn'>
           Send Message
         </button>
       </form>
