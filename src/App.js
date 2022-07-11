@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 // importing AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from './components/Footer';
 
 function App() {
   // initializing AOS
@@ -27,6 +28,7 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }

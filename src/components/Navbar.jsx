@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     //   background color located in here
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#f1f5f8] text-gray-600 header-nav'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#f1f5f8] text-gray-600 header-nav z-10'>
       <div>
         <img
           className='select-none cursor-pointer'
@@ -111,7 +111,10 @@ export default function Navbar() {
       </ul>
 
       {/* social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div
+        className='hidden lg:flex fixed flex-col top-[35%] left-0'
+        data-aos='fade-right'
+      >
         <ul>
           <li className='w-[160px] h-[68px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] transition-all transition-timing-[300] ease-in-out duration-300 bg-[#33a1fd] rounded-xl '>
             <a
@@ -133,7 +136,7 @@ export default function Navbar() {
             </a>
           </li>
 
-          <li className='w-[160px] h-[68px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] transition-all transition-timing-[300] ease-in-out duration-300 bg-[#6fc2b0] rounded-xl'>
+          <li className='w-[160px] h-[68px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] transition-all transition-timing-[300] ease-in-out duration-300 bg-[#f0c229] rounded-xl'>
             <a
               href='contact'
               className='flex justify-between items-center w-full text-gray-100'

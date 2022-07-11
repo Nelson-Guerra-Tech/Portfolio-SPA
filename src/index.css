@@ -49,18 +49,28 @@ ul {
   --ghost-white: #f1f5f8;
 }
 
+.trans {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .waving-hand {
   height: 2rem;
   margin-right: 0.5rem;
-  z-index: -1;
+  z-index: -100;
+  display: inline;
 }
 
 .wave {
+  z-index: -1;
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
-  display: inline-block;
+  display: inline;
 }
 
 @keyframes wave-animation {

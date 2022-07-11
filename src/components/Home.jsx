@@ -13,7 +13,11 @@ export default function Home() {
     <div name='home' className='bg-[#f1f5f8] h-screen w-full'>
       {/* container */}
       <div className='max-w-[1000px] px-8 mx-auto flex flex-col justify-center h-full'>
-        <p className='text-[#33a1fd]'>
+        <p
+          className='text-[#33a1fd]'
+          data-aos='fade-right'
+          data-aos-delay='100'
+        >
           <img
             className='waving-hand wave'
             src={WavingHand}
@@ -21,19 +25,35 @@ export default function Home() {
           />
           Hello, my name is
         </p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-[#0c0e07]'>
+        <h1
+          className='text-4xl sm:text-7xl font-bold text-[#0c0e07]'
+          data-aos='fade-right'
+          data-aos-delay='300'
+        >
           Nelson Guerra
         </h1>
-        <h2 className='text-4xl sm:text-7xl font-bold text-gray-600'>
+        <h2
+          className='text-4xl sm:text-7xl font-bold text-gray-600'
+          data-aos='fade-right'
+          data-aos-delay='500'
+        >
           I'm a <span className='text-[#33a1fd]'>Software Developer</span>
         </h2>
-        <p className='text-gray-600 py-4 max-w-[700px]'>
-          Specializing in building front-end digital experiences. Based out of
-          Georgia 🌎 Currently, I'm focused on building responsive, real-world
+        <p
+          className='text-gray-600 py-4 max-w-[700px]'
+          data-aos='fade-right'
+          data-aos-delay='500'
+        >
+          Specializing in building front-end development. Based out of Georgia
+          🌎 Currently, I'm focused on building responsive, real-world
           applications with React.
         </p>
         <div>
-          <button className='text-white bg-[#33a1fd] border-none group border-2 px-6 py-3 my-2 flex items-center hover:bg-transparent hover:text-[#0c0e07] rounded-xl duration-300 btn'>
+          <button
+            className='text-white bg-[#33a1fd] border-none group border-2 px-6 py-3 my-2 flex items-center hover:bg-transparent hover:text-[#0c0e07] rounded-xl duration-300 btn'
+            data-aos='fade-right'
+            data-aos-delay='700'
+          >
             <Link to='portfolio' smooth={true} duration={500}>
               Portfolio
             </Link>
