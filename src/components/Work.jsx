@@ -9,7 +9,7 @@ const Work = () => {
       className='w-full md:h-screen text-gray-900 bg-[#f1f5f8]'
     >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div className='pb-8' data-aos='fade-up'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-900 border-[#33a1fd]'>
             💻 Porfolio
           </p>
@@ -25,6 +25,8 @@ const Work = () => {
               transitionDuration: 300,
             }}
             className='shadow-md shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div duration-300'
+            data-aos='fade-up'
+            data-aos-delay='100'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
@@ -55,6 +57,8 @@ const Work = () => {
           <div
             style={{ backgroundImage: `url(${realEstate})` }}
             className='shadow-md shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div'
+            data-aos='fade-up'
+            data-aos-delay='200'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
@@ -79,6 +83,8 @@ const Work = () => {
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
             className='shadow-md shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div'
+            data-aos='fade-up'
+            data-aos-delay='300'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
@@ -102,6 +108,8 @@ const Work = () => {
           <div
             style={{ backgroundImage: `url(${realEstate})` }}
             className='shadow-md shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div'
+            data-aos='fade-up'
+            data-aos-delay='400'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
@@ -126,6 +134,8 @@ const Work = () => {
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
             className='shadow-md shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div'
+            data-aos='fade-up'
+            data-aos-delay='500'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
@@ -149,6 +159,8 @@ const Work = () => {
           <div
             style={{ backgroundImage: `url(${realEstate})` }}
             className='shadow-md shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div'
+            data-aos='fade-up'
+            data-aos-delay='600'
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>

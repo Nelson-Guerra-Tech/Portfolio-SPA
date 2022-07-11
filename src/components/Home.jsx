@@ -44,7 +44,7 @@ export default function Home() {
           data-aos='fade-right'
           data-aos-delay='500'
         >
-          Specializing in building front-end development. Based out of Georgia
+          Specializing in building front-end development & based out of Georgia
           🌎 Currently, I'm focused on building responsive, real-world
           applications with React.
         </p>

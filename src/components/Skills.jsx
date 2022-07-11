@@ -16,7 +16,7 @@ export default function Skills() {
     <div className='bg-[#f1f5f8] text-gray-900 w-full h-screen' name='skills'>
       {/* container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div>
+        <div data-aos='fade-up'>
           <p className='text-4xl font-bold inline border-b-4 border-[#33a1fd]'>
             🎯 Skills
           </p>
@@ -25,19 +25,31 @@ export default function Skills() {
 
         {/* html */}
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl'>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl'
+            data-aos='fade-up'
+            data-aos-delay='100'
+          >
             <img className='w-20 mx-auto mt-4' src={HTML} alt='HTML Icon' />
             <p className='my-4'>HTML</p>
           </div>
 
           {/* css */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='200'
+          >
             <img className='w-20 mx-auto mt-4' src={CSS} alt='HTML Icon' />
             <p className='my-4'>CSS</p>
           </div>
 
           {/* javascript */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='300'
+          >
             <img
               className='w-20 mx-auto mt-4'
               src={JavaScript}
@@ -47,7 +59,11 @@ export default function Skills() {
           </div>
 
           {/* react */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='400'
+          >
             <img
               className='w-20 mx-auto mt-4 react-icon rotate'
               src={ReactImg}
@@ -63,19 +79,31 @@ export default function Skills() {
           </div> */}
 
           {/*  */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='500'
+          >
             <img className='w-20 mx-auto mt-4' src={Tailwind} alt='HTML Icon' />
             <p className='my-4'>Tailwind CSS</p>
           </div>
 
           {/* Firebase */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='600'
+          >
             <img className='w-20 mx-auto mt-4' src={FireBase} alt='HTML Icon' />
             <p className='my-4'>Firebase</p>
           </div>
 
           {/*  */}
-          <div className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '>
+          <div
+            className='shadow-sm shadow-[#040c16] hover:scale-110 duration-500 rounded-xl '
+            data-aos='fade-up'
+            data-aos-delay='700'
+          >
             {/* <img
               className='w-20 mx-auto mt-4'
               src={<FaGitHub />}
